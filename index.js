@@ -105,6 +105,8 @@ inquirer.prompt([
     
 const displayInfo = `# ${answers.title}
 
+![License Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+
 # Table of Contents
 * [Usage](#usage)
 * [Description](#usage)

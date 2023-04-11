@@ -1,5 +1,7 @@
 # E-Read-Me
 
+![License Badge](https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg)
+
 # Table of Contents
 * [Usage](#usage)
 * [Description](#usage)
@@ -21,8 +23,8 @@ Inside the app, run "node index.js" and the questions or prompts will be display
 Junnel R. Padilla, Stackoverflow, Youtube.
   
 ## License
-![License](https://img.shields.io/badge/license-MIT_License-blue.svg)
-
+![License Badge](https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg)
+  
 ## Contacts
 * Github: https://github.com/jayP308
 * Email: junnelpadilla308@gmail.com
