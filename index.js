@@ -128,8 +128,9 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)(https://opensource.org/licenses/${answers.license})
-  
+![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)
+${answers.license[0]} = "Not Today"
+
 ## Contacts
 * Github: https://github.com/${answers.github}
 * Email: ${answers.email}`;
