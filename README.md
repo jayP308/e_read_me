@@ -1,4 +1,4 @@
-# E_Read_Me
+# sdfsd
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,20 +11,21 @@
 * [Contacts](#contacts)
   
 ## Usage
-This app is use to generate readme page instantly by simply following series of prompts or questions and this app will generate a read me base on user input.
+sf
   
 ## Description
-This app includes series of questions the user will need to answer and will not allow to input blank. This includes a title, table of contents to direct to specific tab when click, usage information, description, installation, contributors, license and where to contact user. Simply answer each questions and the license part will make you choose a type of license that are available to use. After submitting, a message will be display that readme page has been created and a new file will be added as README.md.
+sdf
   
 ## Installation
-Inside the app, run "node index.js" and the questions or prompts will be displayed one by one as the questions being answered.
+asf
   
 ## Contributors
-Junnel R. Padilla, Stackoverflow, Youtube.
+sdf
   
 ## License
-![License Badge](https://img.shields.io/badge/License-MIT-blue.svg)
+This project is licensed under [![License]MIT](https://opensource.org/licenses/MIT)
 
-## Contacts
-* Github: https://github.com/jayP308
-* Email: junnelpadilla308@gmail.com
+## Questions?
+* Name: sdf
+* Github: https://github.com/sadf
+* Email: sdf

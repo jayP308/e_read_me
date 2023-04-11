@@ -2,6 +2,11 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
 
+const licenseList =[{
+  MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+  Apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+}]
+
 inquirer.prompt([
     {
       name: 'title',
@@ -67,12 +72,24 @@ inquirer.prompt([
       name: 'license',
       message: 'What license are you using?',
       type: "list",
-      choices: ["MIT"],
+      choices: ["MIT", "Zlib", "ISC"],
       validate: (value) => {
         if(value){
             return true
         } else {
             return 'Must Choose One!. Please Try Again!'
+        }
+      }
+    },
+    {
+      name: 'fullname',
+      message: 'What is your name?',
+      type: 'input',
+      validate: (value) => {
+        if(value){
+            return true
+        } else {
+            return 'Cannot be blank!. Please Try Typing again'
         }
       }
     },
@@ -101,7 +118,7 @@ inquirer.prompt([
       }
     },
   ]).then((answers) => {
-    
+
 const displayInfo = `# ${answers.title}
 
 [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
@@ -127,16 +144,17 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)
+This project is licensed under [![License]${answers.license}](https://opensource.org/licenses/${answers.license})
 
-## Contacts
+## Questions?
+* Name: ${answers.fullname}
 * Github: https://github.com/${answers.github}
 * Email: ${answers.email}`;
   
 createNewFile(displayInfo);
   });
 
-  function createNewFile(data) {
+function createNewFile(data) {
     fs.writeFile(path.join(`README.md`), data,(err) => {
       if (err) throw err;
       console.log("Read Me has been created!");
