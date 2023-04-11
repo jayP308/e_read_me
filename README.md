@@ -1,6 +1,6 @@
-# sdfsd
+# sdf
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Zlib-blue.svg)](https://opensource.org/licenses/Zlib)
 
 # Table of Contents
 * [Usage](#usage)
@@ -11,21 +11,21 @@
 * [Contacts](#contacts)
   
 ## Usage
-sf
+sd
   
 ## Description
 sdf
   
 ## Installation
-asf
-  
-## Contributors
 sdf
   
+## Contributors
+sd
+  
 ## License
-This project is licensed under [![License]MIT](https://opensource.org/licenses/MIT)
+This project is licensed under [![License](Zlib)](https://opensource.org/licenses/Zlib)
 
 ## Questions?
 * Name: sdf
-* Github: https://github.com/sadf
+* Github: https://github.com/sdf
 * Email: sdf

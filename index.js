@@ -144,7 +144,7 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-This project is licensed under [![License]${answers.license}](https://opensource.org/licenses/${answers.license})
+This project is licensed under [![License](${answers.license})](https://opensource.org/licenses/${answers.license})
 
 ## Questions?
 * Name: ${answers.fullname}
