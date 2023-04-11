@@ -23,7 +23,7 @@ sdf
 sd
   
 ## License
-This project is licensed under [![License](Zlib)](https://opensource.org/licenses/Zlib)
+This project is licensed under [Zlib](https://opensource.org/licenses/Zlib)
 
 ## Questions?
 * Name: sdf
