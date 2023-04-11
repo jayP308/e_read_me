@@ -126,7 +126,7 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-https://img.shields.io/badge/dynamic/yaml?url=<URL>&label=<LABEL>&query=<${answers.license}>&color=<COLOR>&prefix=<PREFIX>&suffix=<SUFFIX>
+https://img.shields.io/badge/license-${answers.license}-blue.svg
   
 ## Contacts
 * Github: https://github.com/${answers.github}
