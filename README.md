@@ -23,7 +23,9 @@ Inside the app, run "node index.js" and the questions or prompts will be display
 Junnel R. Padilla, Stackoverflow, Youtube.
   
 ## License
-![License Badge](https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg)
+[![License Badge](https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg)]
+(https://opensource.org/licenses/GNU_General_Public_License_v3.0)
+  
   
 ## Contacts
 * Github: https://github.com/jayP308
