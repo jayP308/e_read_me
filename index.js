@@ -67,7 +67,7 @@ inquirer.prompt([
       name: 'license',
       message: 'What license are you using?',
       type: "list",
-      choices: ["Apache_2.0"],
+      choices: ["MIT"],
       validate: (value) => {
         if(value){
             return true
