@@ -46,7 +46,19 @@ inquirer.prompt([
     },
     {
       name: 'installation',
-      message: 'Give a brief instruction on how to use your app.',
+      message: 'Give a short instruction on how to use the app.',
+      type: 'input',
+      validate: (value) => {
+        if(value){
+            return true
+        } else {
+            return 'Cannot be blank!. Please Try Typing again'
+        }
+      }
+    },
+    {
+      name: 'test',
+      message: 'How do you test the app once installed?',
       type: 'input',
       validate: (value) => {
         if(value){
@@ -72,7 +84,7 @@ inquirer.prompt([
       name: 'license',
       message: 'What license are you using?',
       type: "list",
-      choices: ["MIT", "Zlib", "ISC"],
+      choices: ["MIT", "Zlib", "ISC", "Eclipse","Php","Unlicense"],
       validate: (value) => {
         if(value){
             return true
@@ -127,6 +139,7 @@ const displayInfo = `# ${answers.title}
 * [Usage](#usage)
 * [Description](#usage)
 * [Installation](#installation)
+* [Test](#test)
 * [Contributors](#contributors)
 * [License](#license)
 * [Contacts](#contacts)
@@ -139,12 +152,15 @@ ${answers.description}
   
 ## Installation
 ${answers.installation}
+
+## Test
+${answers.test}
   
 ## Contributors
 ${answers.contribution}
   
 ## License
-This project is licensed under [!${answers.license}](https://opensource.org/licenses/${answers.license})
+This project is licensed under [${answers.license}](https://opensource.org/licenses/${answers.license})
 
 ## Questions?
 * Name: ${answers.fullname}
