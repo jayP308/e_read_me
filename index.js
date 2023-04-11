@@ -131,9 +131,7 @@ inquirer.prompt([
     },
   ]).then((answers) => {
 
-const displayInfo = `# ${answers.title}
-
-[![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+const displayInfo = `# ${answers.title} [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 # Table of Contents
 * [Usage](#usage)
