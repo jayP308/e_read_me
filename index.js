@@ -67,10 +67,16 @@ inquirer.prompt([
       name: 'license',
       message: 'What license are you using?',
       type: "list",
-      choices: ["apache-2-0","GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
-      validate: (value) => {
+      choices: [{
+        key: "this is not a test",
+        value: "Apache_2.0"
+      },
+      "GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
+      validate: (value, key) => {
         if(value){
             return true
+        } else if (key) {
+          return true
         } else {
             return 'Must Choose One!. Please Try Again!'
         }
