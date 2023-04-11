@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
-import { error } from 'console';
+
 
 inquirer.prompt([
     {
@@ -79,7 +79,7 @@ inquirer.prompt([
     },
     {
       name: 'github',
-      message: 'What is your github username and link?',
+      message: 'What is your github username?',
       type: 'input',
       validate: (value) => {
         if(value){
@@ -104,14 +104,14 @@ inquirer.prompt([
   ]).then((answers) => {
     
 const displayInfo = `# ${answers.title}
-  
+
 # Table of Contents
 * [Usage](#usage)
 * [Description](#usage)
 * [Installation](#installation)
-* [Contributors](#contribution)
+* [Contributors](#contributors)
 * [License](#license)
-* [Contacts](#github)
+* [Contacts](#contacts)
   
 ## Usage
 ${answers.usage}
@@ -126,17 +126,17 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-${answers.license}
+https://img.shields.io/badge/dynamic/yaml?url=<URL>&label=<LABEL>&query=<${answers.license}>&color=<COLOR>&prefix=<PREFIX>&suffix=<SUFFIX>
   
 ## Contacts
-* Github: ${answers.github}
+* Github: https://github.com/${answers.github}
 * Email: ${answers.email}`;
   
-    createNewFile("readme", displayInfo);
+createNewFile(displayInfo);
   });
 
-  function createNewFile(fileName, data) {
-    fs.writeFile(`./${fileName.toLowerCase()}.md`, data,(err) => {
+  function createNewFile(data) {
+    fs.writeFile(path.join(`README.md`), data,(err) => {
       if (err) throw err;
       console.log("Read Me has been created!");
     })
