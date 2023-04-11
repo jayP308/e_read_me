@@ -68,7 +68,7 @@ inquirer.prompt([
       name: 'license',
       message: 'What is the license you using?',
       type: "list",
-      choices: ['Apache License 2.0', "GNU General Public License v3.0", "MIT License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "Mozilla Public License 2.0", " The Unlicense"],
+      choices: ['Apache_License_2.0', "GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
       validate: (value) => {
         if(value){
             return true
@@ -126,7 +126,7 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-[License Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+[![License Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg)]
   
 ## Contacts
 * Github: https://github.com/${answers.github}
