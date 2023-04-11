@@ -1,6 +1,6 @@
-# E_Read_Me
+# cfasd
 
-![License Badge](https://img.shields.io/badge/license-Apache-2.0-blue.svg)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache_2.0)
 
 # Table of Contents
 * [Usage](#usage)
@@ -23,8 +23,9 @@ Inside the app, run "node index.js" and the questions or prompts will be display
 Junnel R. Padilla, Stackoverflow, Youtube.
   
 ## License
-![License Badge](https://img.shields.io/badge/License-Apache-2.0-blue.svg)
+![License Badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
+Apache_2.0
 
 ## Contacts
 * Github: https://github.com/jayP308

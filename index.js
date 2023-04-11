@@ -67,16 +67,10 @@ inquirer.prompt([
       name: 'license',
       message: 'What license are you using?',
       type: "list",
-      choices: [{
-        key: "this is not a test",
-        value: "Apache_2.0"
-      },
-      "GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
-      validate: (value, key) => {
+      choices: ["Apache_2.0"],
+      validate: (value) => {
         if(value){
             return true
-        } else if (key) {
-          return true
         } else {
             return 'Must Choose One!. Please Try Again!'
         }
@@ -110,7 +104,7 @@ inquirer.prompt([
     
 const displayInfo = `# ${answers.title}
 
-![License Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+[![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 # Table of Contents
 * [Usage](#usage)
@@ -134,8 +128,6 @@ ${answers.contribution}
   
 ## License
 ![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)
-
-${answers.license}
 
 ## Contacts
 * Github: https://github.com/${answers.github}
