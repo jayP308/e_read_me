@@ -23,7 +23,7 @@ Inside the app, run "node index.js" and the questions or prompts will be display
 Junnel R. Padilla, Stackoverflow, Youtube.
   
 ## License
-![License Badge](https://img.shields.io/badge/License-apache-2-0-blue.svg)
+![License Badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 https://opensource.org/license/apache-2-0/
 
 ## Contacts
