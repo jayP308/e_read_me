@@ -2,7 +2,6 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
 
-
 inquirer.prompt([
     {
       name: 'title',
@@ -66,14 +65,14 @@ inquirer.prompt([
     },
     {
       name: 'license',
-      message: 'What is the license you using?',
+      message: 'What license are you using?',
       type: "list",
-      choices: ['Apache_License_2.0', "GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
+      choices: ["apache-2-0","GNU_General_Public_License_v3.0", "MIT_License", "Boost_Software_License_1.0", "Creative_Commons_Zero_v1.0_Universal", "Eclipse_Public_License 2.0", "Mozilla_Public_License 2.0", " The_Unlicense"],
       validate: (value) => {
         if(value){
             return true
         } else {
-            return 'Cannot be blank!. Please Try Typing again'
+            return 'Must Choose One!. Please Try Again!'
         }
       }
     },
@@ -129,7 +128,8 @@ ${answers.contribution}
   
 ## License
 ![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)
-${answers.license[0]} = "Not Today"
+
+${answers.license}
 
 ## Contacts
 * Github: https://github.com/${answers.github}

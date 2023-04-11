@@ -1,6 +1,6 @@
-# e-read-me
+# E_Read_Me
 
-![License Badge](https://img.shields.io/badge/license-Apache_License_2.0-blue.svg)
+![License Badge](https://img.shields.io/badge/license-apache-2-0-blue.svg)
 
 # Table of Contents
 * [Usage](#usage)
@@ -23,8 +23,8 @@ Inside the app, run "node index.js" and the questions or prompts will be display
 Junnel R. Padilla, Stackoverflow, Youtube.
   
 ## License
-![License Badge](https://img.shields.io/badge/License-Apache_License_2.0-blue.svg)
-A = "Not Today"
+![License Badge](https://img.shields.io/badge/License-apache-2-0-blue.svg)
+https://opensource.org/license/apache-2-0/
 
 ## Contacts
 * Github: https://github.com/jayP308
