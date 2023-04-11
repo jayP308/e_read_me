@@ -128,8 +128,7 @@ ${answers.installation}
 ${answers.contribution}
   
 ## License
-[![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)]
-(https://opensource.org/licenses/${answers.license})
+![License Badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)(https://opensource.org/licenses/${answers.license})
   
 ## Contacts
 * Github: https://github.com/${answers.github}
