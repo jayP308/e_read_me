@@ -6,6 +6,7 @@
 * [Usage](#usage)
 * [Description](#usage)
 * [Installation](#installation)
+* [Test](#test)
 * [Contributors](#contributors)
 * [License](#license)
 * [Questions](#questions)
