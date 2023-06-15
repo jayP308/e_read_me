@@ -2,11 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
 
-const licenseList =[{
-  MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
-  Apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-}]
-
+// When app is run to command line, this series of question will be asked
 inquirer.prompt([
     {
       name: 'title',
@@ -131,9 +127,10 @@ inquirer.prompt([
     },
   ]).then((answers) => {
 
+// Displaying the info that includes a table of contents, usage, Description, installation, test, contributors, license, questions
 const displayInfo = `# ${answers.title} [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
-# Table of Contents
+# Table of Contents 
 * [Usage](#usage)
 * [Description](#usage)
 * [Installation](#installation)
@@ -164,10 +161,13 @@ This project is licensed under [${answers.license}](https://opensource.org/licen
 * Name: ${answers.fullname}
 * Github: https://github.com/${answers.github}
 * Email: ${answers.email}`;
-  
+
+// call back function to write a new file after questions are asked
 createNewFile(displayInfo);
   });
 
+
+// function to create a new read me file
 function createNewFile(data) {
     fs.writeFile(path.join(`README.md`), data,(err) => {
       if (err) throw err;
